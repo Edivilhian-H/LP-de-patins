@@ -219,3 +219,38 @@
     transform: translateY(-15rem);
   }
 }
+
+@media (width <= 40em) {
+  #hero {
+    & h1 {
+      & div {
+        height: 2.5rem;
+      }
+    }
+
+
+    & > div:nth-child(2) {
+      margin-bottom: -8rem;
+
+      & img[src*="stars-1"] {
+        max-width: 3.5rem;
+        top: 20%;
+      }
+
+      & img[src*="stars-2"] {
+        max-width: 2rem;
+        right: -1%;
+        top: 32%;
+      }
+    }
+  }
+
+  @keyframes slideInd {
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}

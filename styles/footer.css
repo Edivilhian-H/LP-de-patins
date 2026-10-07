@@ -75,7 +75,7 @@ footer {
 
       &::before {
         content: "";
-        
+
         width: inherit;
         height: inherit;
         border-radius: inherit;
@@ -91,5 +91,18 @@ footer {
         transition: scale 200ms;
       }
     }
-  } 
+  }
+}
+
+@media (width <=40em) {
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+
+    & nav {
+      flex-direction: column;
+    }
+  }
 }
